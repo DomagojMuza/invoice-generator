@@ -7,7 +7,7 @@ RewriteBase /
 RewriteRule ^_next/static/(.*)$ /static/$1 [P,L]
 
 
-RewriteRule test https://google.com [QSA,R=301,L]
+RewriteRule test https://google.com [P,L]
 
 </IfModule>
 
