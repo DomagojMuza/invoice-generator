@@ -4,7 +4,10 @@
 RewriteEngine On
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 RewriteBase /
-RewriteRule ^_next/static/(.*)$ /static/$1 [QSA,P,L]
+RewriteRule ^_next/static/(.*)$ /static/$1 [P,L]
+
+
+RewriteRule test https://google.com [QSA,R=301,L]
 
 </IfModule>
 
