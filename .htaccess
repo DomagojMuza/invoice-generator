@@ -4,7 +4,7 @@
 RewriteEngine On
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 RewriteBase /
-RewriteRule ^_next/static/(.*)$ /public/statuc/$1 [QSA,P,L]
+RewriteRule ^_next/static/(.*)$ /static/$1 [QSA,P,L]
 
 </IfModule>
 
