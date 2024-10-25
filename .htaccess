@@ -1,0 +1,11 @@
+
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^_next/static/(.*)$ /public/statuc/$1 [QSA,P,L]
+
+</IfModule>
+
+# END WordPress
